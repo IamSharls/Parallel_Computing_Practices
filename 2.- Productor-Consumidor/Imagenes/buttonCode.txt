@@ -1,0 +1,41 @@
+but(leftButtonPanel, "", new ActionListener() {
+            public void actionPerformed(ActionEvent evento) {
+            }
+        });
+
+        but(leftButtonPanel, "", new ActionListener() {
+            public void actionPerformed(ActionEvent evento) {  
+
+            }
+        });
+
+        but(centerButtonPanel, "", new ActionListener() {
+            public void actionPerformed(ActionEvent evento) {
+               
+            }
+        });
+        but(centerButtonPanel, "", new ActionListener() {
+            public void actionPerformed(ActionEvent evento) {
+                
+            }
+        });
+
+        but(rightButtonPanel, "", new ActionListener() {
+            public void actionPerformed(ActionEvent evento) {
+                
+            }
+        });
+
+        but(rightButtonPanel, "", new ActionListener() {
+            public void actionPerformed(ActionEvent evento) {
+                
+            }
+        });
+
+
+public void but(Container container, String name, ActionListener listener) {
+        JButton boton = new JButton(name);
+        buttonsControl.add(boton);
+        container.add(boton);
+        boton.addActionListener(listener);
+    }

@@ -1,0 +1,12 @@
+Como se puede observar en las capturas, solamente se hicieron unas pequeñas modificaciones al programa para añadir
+las lineas de codigo referentes al seteo de prioridad, que basicamente solamente consisten en asignar a cada hilo
+con el método setPriority() la priridad designada.
+En esta ocasión se probó de dos maneras, se asignó la prioridad con las palabras reservadas de MAX_PRIORITY (asigna un
+valor de 10) y  MIN_PRIORITY (asigna un valor de 1) y tambien se probó asignando directamente los valores con numeros
+enteros, en este caso, 1 y 10.
+
+Lo extraño aqui es que en efecto si funcionan las prioridades pero de manera inversa. Como se observa en las capturas
+siempre termina primero el hilo que tiene la prioridad minima ya sea con la palabra reservada o asignando el valor 
+directamente. De hecho esta fue la razon por la que se probó con la prioridad personalizada por el usuario, es decir, 
+asignando los valores directamente, ya que fue extraño el comportamiento con las palabras reservadas, pero al final 
+terminó con el mismo resultado, sea el metodo que usaramos.

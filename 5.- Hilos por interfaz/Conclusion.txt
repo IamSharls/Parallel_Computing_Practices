@@ -1,0 +1,12 @@
+Despues de ejecutar varias veces el segundo programa, las primeras veces de ejecución parecía
+como si fuera a tener el mismo comportamiento que el anterior, ya que en las primeras ejecuciones a pesar de iniciar
+con el hilo "Pepe" a veces iniciaba primero el hilo "Juan" y los contadores iban subiendo de forma aleatoria.
+
+Pero despues de ejecutarlo algunas veces pareciera como si con cada ejecución se fuera formando un patron que se 
+puede ver claramente en las capturas.
+El hilo "Juan" comenzo a ser el ejecutado primero siempre, el termino de ambos hilos se comenzo a acercar hasta el punto
+en el que siempre terminaban al final uno despues de otro. Y tambien se pudo observar una especie de alternancia
+entre los dos hilos despues de varias ejecuciones, como si hubiera alguna linea de codigo que definiera que 
+ambos hilos se tenian que estar alternando de manera uniforme, primero uno y despues el otro y asi sucesivamente.
+Como si los hilos hubieran aprendido a sincronizarse para que no se desfazaran sus tiempos internos y siguieran el 
+mismo patrón, ejecucuión tras ejecución.

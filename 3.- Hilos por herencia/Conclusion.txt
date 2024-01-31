@@ -1,0 +1,16 @@
+El programa en si en bastante sencillo ya que solamente se inician dos hilos a traves de herencia para que cada uno
+comience a ejecutar un ciclo for de 0 a 10 alternandoce en el avance de manera aleatoria.
+
+Ahora bien en cuando a las preguntas "¿Puedes controlar los tiempos de ejecución de cada hilo?, 
+¿Puedes garantizar el inicio de un hilo en específico?, ¿Puedes garantizar que un hilo en específico termine primero?"
+
+Despues de ejecutarlo multiples veces y observar el resultado sin modificar absolutamente nada del programa, he notado
+que practicamente las tres preguntas se responden con la misma respuesta: ES ALEATORIO. 
+Los tiempos de ejecucion de un hilo se pueden controlar con el metodo sleep, más sin embargo el objetivo del programa 
+no es implementar este metodo.
+Ademas uno creeria que al iniciar un hilo en especifico despues del otro haria que este siempre iniciara primero, 
+pero si observamos las capturas es irrelevante poner la linea de codigo antes o despues ya que como podemos observar
+se puede ejecutar el segundo hilo primero.
+Y por ultimo el termino de un hilo tambien es aleatorio, en especial el termino, ya que si no podemos controlar el
+inicio, mucho menos controlaremos el final. Los hilos simplementen se ejecutaran cuando los recursos esten disponibles
+y termiran en posiciones y tiempos diferentes.
